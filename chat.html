@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SecuChat</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="" />
+    <link rel="stylesheet" href="css/speak.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/TimeCircles.css" type="text/css" media="all" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Secure Chat</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="index.html">Home</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-md-offset-3">
+        <h1 id="title">Create a chat room</h1>
+        <div class="col-md-10">
+          <p id="subTitle"> </p>
+        </div>
+        <button type="button" class="btn btn-info" id = 'copy'>Copy &amp; Share</button>
+        <form id="createRoom" class="input-group create-form">
+          <input id="sessionInput" class="form-control"/>
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-info">Get this room</button>
+          </span>
+        </form>
+      </div>
+      <div class="col-md-3 pull-right">
+        <div class="clock"></div>
+      </div>
+      <br />
+      <div class="col-md-12">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="col-md-4">
+            <a href="chat.html" id="leave" class="btn btn-danger">Leave this room</a>
+            <video id="localVideo" style="height: 250px; margin-top: 15px" oncontextmenu="return false;"></video>
+            <div id="localVolume" class="volume_bar"></div>
+          </div>
+          <div id="remotes"></div>
+        </div>
+      </div>
+      <div class="push">
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/latest.js"></script>
+    <script src="js/speak.js"></script>
+    <script src="js/TimeCircles.js"></script>
+  </body>
+</html>
