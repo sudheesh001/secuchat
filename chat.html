@@ -5,6 +5,28 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="" />
     <link rel="stylesheet" href="css/speak.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/TimeCircles.css" type="text/css" media="all" />
+    <style type="text/css">
+
+    body{
+      background: #1f8dd6;
+    }
+    #title{
+      text-align: center;
+    }
+    #sessionInput{
+      text-align: center;
+      margin: 20px;
+    }
+    #remotes>div>video{
+      height: 300px;
+      margin-left: -50px;
+      margin-top: 12px;
+    }
+    #localVideo{
+      height: 200px;
+      width: 200px;
+    }
+    </style>
   </head>
   <script>
         function generateRandAlphaNumStr(len) {
@@ -15,6 +37,7 @@
         function writetoform(str){
           document.getElementById('sessionInput').value=str;
         }
+        document.getElementById('')
   </script>
   <body>
     <div class="wrapper">
@@ -38,26 +61,29 @@
         <div class="col-md-10">
           <p id="subTitle"> </p>
         </div>
-        <button type="button" class="btn btn-info" id = 'copy'>Copy &amp; Share</button>
-        <button type="button" class="btn btn-info" id = 'generate' onclick="generateRandAlphaNumStr(25)">Generate Random Room</button>
+        
         
         <form id="createRoom" class="input-group create-form">
-          <input id="sessionInput" class="form-control"/>
-          <span class="input-group-btn">
-            <button type="submit" class="btn btn-info">Get this room</button>
+          <input id="sessionInput" class="form-control col-offset-xs-1" style="margin-left:10px;" />
+          <span class="input-group-btn ">
+            <button type="submit" class="btn btn-info ">Get this room</button>
           </span>
         </form>
       </div>
-      <div class="col-md-3 pull-right">
+      <div class="col-md-4 pull-left" style="margin-top:-62px;">
+        <button type="button" class="btn btn-info" id = 'copy' style="margin:10px;" >Copy &amp; Share</button>
+        <button type="button" class="btn btn-info" id = 'generate' onclick="generateRandAlphaNumStr(25)" style="margin:10px;">Generate Random Room</button><br>
+        <a href="chat.html" id="leave" class="btn btn-danger" style="margin:10px;">Leave this room</a>
+        <button onclick="TogetherJS(this); return false;" class="btn btn-success" style="margin:10px;">Start Chat and Collaborating</button><br>
+      </div>
+      <div class="col-md-3 pull-right" style="margin-top:-130px;">
         <div class="clock"></div>
       </div>
       <br />
       <div class="col-md-12">
-        <div class="col-md-10 col-md-offset-1">
-          <div class="col-md-4">
-            <a href="chat.html" id="leave" class="btn btn-danger">Leave this room</a>
-            <video id="localVideo" style="height: 250px; margin-top: 15px" oncontextmenu="return false;"></video>
-            <button onclick="TogetherJS(this); return false;">Start Chat and Collaborating</button>
+        <div class="col-md-10">
+          <div class="col-md-4 col-lg-offset-1">
+            <video id="localVideo" style="height: 250px; margin-top: 15px;" oncontextmenu="return false;"></video>
             <div id="localVolume" class="volume_bar"></div>
           </div>
           <div id="remotes"></div>
