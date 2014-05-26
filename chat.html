@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="css/speak.css" type="text/css" media="all" />
     <link rel="stylesheet" href="css/TimeCircles.css" type="text/css" media="all" />
   </head>
-
+  <script>
+        function generateRandAlphaNumStr(len) {
+          var rdmString = "";
+          for( ; rdmString.length < len; rdmString  += Math.random().toString(36).substr(2));
+            return  writetoform(rdmString.substr(0, len));
+        }
+        function writetoform(str){
+          document.getElementById('sessionInput').value=str;
+        }
+  </script>
   <body>
     <div class="wrapper">
       <div class="navbar navbar-inverse">
@@ -30,6 +39,8 @@
           <p id="subTitle"> </p>
         </div>
         <button type="button" class="btn btn-info" id = 'copy'>Copy &amp; Share</button>
+        <button type="button" class="btn btn-info" id = 'generate' onclick="generateRandAlphaNumStr(25)">Generate Random Room</button>
+        
         <form id="createRoom" class="input-group create-form">
           <input id="sessionInput" class="form-control"/>
           <span class="input-group-btn">
@@ -46,6 +57,7 @@
           <div class="col-md-4">
             <a href="chat.html" id="leave" class="btn btn-danger">Leave this room</a>
             <video id="localVideo" style="height: 250px; margin-top: 15px" oncontextmenu="return false;"></video>
+            <button onclick="TogetherJS(this); return false;">Start Chat and Collaborating</button>
             <div id="localVolume" class="volume_bar"></div>
           </div>
           <div id="remotes"></div>
@@ -56,6 +68,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
     <script src="js/latest.min.js"></script>
     <script src="js/speak.js"></script>
     <script src="js/TimeCircles.js"></script>
