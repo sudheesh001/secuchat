@@ -66,15 +66,15 @@
         <form id="createRoom" class="input-group create-form">
           <input id="sessionInput" class="form-control col-offset-xs-1" style="margin-left:10px;" />
           <span class="input-group-btn ">
-            <button type="submit" class="btn btn-info ">Get this room</button>
+            <button onclick="TogetherJS(this); return false;" class="btn btn-success" style="margin:10px;" type="submit">Get this room</button>
           </span>
         </form>
       </div>
       <div class="col-md-4 pull-left" style="margin-top:-62px;">
         <button type="button" class="btn btn-info" id = 'copy' style="margin:10px;" >Copy &amp; Share</button>
         <button type="button" class="btn btn-info" id = 'generate' onclick="generateRandAlphaNumStr(25)" style="margin:10px;">Generate Random Room</button><br>
-        <a href="chat.html" id="leave" class="btn btn-danger" style="margin:10px;">Leave this room</a>
-        <button onclick="TogetherJS(this); return false;" class="btn btn-success" style="margin:10px;">Start Chat and Collaborating</button><br>
+        
+        <!-- <button onclick="TogetherJS(this); return false;" class="btn btn-success" style="margin:10px;">Start Chat and Collaborating</button><br> -->
       </div>
       <div class="col-md-3 pull-right" style="margin-top:-130px;">
         <div class="clock"></div>
@@ -83,6 +83,7 @@
       <div class="col-md-12">
         <div class="col-md-10">
           <div class="col-md-4 col-lg-offset-1">
+            <a href="chat.html" id="leave" class="btn btn-danger" style="margin:10px;">Leave this room</a>
             <video id="localVideo" style="height: 250px; margin-top: 15px;" oncontextmenu="return false;"></video>
             <div id="localVolume" class="volume_bar"></div>
           </div>
