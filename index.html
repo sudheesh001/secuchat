@@ -1,54 +1,347 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Secu Chat</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="" />
-    <link rel="stylesheet" href="css/speak.css" type="text/css" media="all" />
+<html class="" lang="en-US"><!--[if IE 7 ]>    <html class= "ie7"> <![endif]--><!--[if IE 8 ]>    <html class= "ie8"> <![endif]--><!--[if IE 9 ]>    <html class= "ie9"> <![endif]--><!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+   <![endif]--><head><title>Secure Chat</title>
+   <meta charset="UTF-8">
+
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- *************************************************************************
+*****************              CUSTOM CSS              ********************
+************************************************************************** -->
+
+<link rel="stylesheet" id="creativ_shortcodes-css" href="css/shortcodes.css" type="text/css" media="all">
+<link rel="stylesheet" id="tws-crimsontext-css" href="http://fonts.googleapis.com/css?family=Crimson+Text%3A400%2C400italic%2C600%2C600italic%2C700%2C700italic&amp;ver=1.0" type="text/css" media="">
+<link rel="stylesheet" id="tws-playfair-css" href="http://fonts.googleapis.com/css?family=Playfair+Display%3A400%2C400italic%2C700%2C700italic%2C900%2C900italic&amp;ver=1.0" type="text/css" media="">
+<link rel="stylesheet" id="style-css" href="css/style.css" type="text/css" media="all">
+<div class="fit-vids-style">­
+    <style>               
+    .fluid-width-video-wrapper {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+    .fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }                                      
+    </style>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="js/masonry.min.js"></script>
+
+<!-- <script type="text/javascript" src="js/front.js"></script> -->
+
+<style type="text/css">
+
+div#linkblock {
+  background-image:url('');
+  background-repeat:;
+  background-color:#f6f6f6;
+}
+
+div#control {
+  background-image:url('');
+  background-repeat:;
+  background-color:#f6f6f6;
+}
+
+body {
+  background-image:url('');
+  background-repeat:;
+  background-color:#ffffff;
+}
+
+span.highlight, h1, h1.crimson, h1.clearsans, h2, h2.crimson, h2.clearsans, h2 a, h2 a:hover, h2.linkpost a, h3, h3.crimson, h3.clearsans, .blogwidget a, .blogwidget a:hover, a.more-link, .nav li.current-menu-item > a, .nav li ul.sub-menu li.current-menu-item > a, .nav li a:hover, .nav li a ul li a:hover, blockquote, blockquote p, .wp-playlist-light .wp-playlist-playing a, .wp-playlist-light .wp-playlist-playing .wp-playlist-item-length, .wp-playlist-playing a.wp-playlist-caption span.wp-playlist-item-title, body .creativ-shortcode-button-colour-theme, body .creativ-shortcode-button-colour-dark-gray:hover, body .creativ-shortcode-tab-buttons a.active, body .creativ-shortcode-tab-buttons a:hover {
+    color:#434343 !important;
+}
+
+input[type=submit]:hover {
+    background-color:#434343;
+}
+
+hr, .comment-content {
+    border-bottom:5px solid #f6f6f6;
+}
+
+textarea, input[type=text], input[type=email], input[type=url], input[type=password] {
+    border:3px solid #f6f6f6;
+}
+
+body .creativ-shortcode-toggle .creativ-shortcode-toggle-content {
+    border-top: 1px solid #f6f6f6 !important;
+}
+
+body .creativ-shortcode-toggle, body .creativ-shortcode-tabpane { 
+    border: 1px solid #f6f6f6 !important;
+}
+
+body .creativ-shortcode-tab-buttons a, body .creativ-shortcode-tab-buttons a, body .creativ-shortcode-tab-buttons a { 
+    border-color: #f6f6f6 #f6f6f6 #f6f6f6 !important;
+}
+
+.pagination2, textarea:focus, input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=submit], body .creativ-shortcode-button-colour-theme, body .creativ-shortcode-button-colour-dark-gray:hover, body .creativ-shortcode-toggle h3.creativ-shortcode-toggle-heading, body .creativ-shortcode-tab-buttons a.active, body .creativ-shortcode-tab-buttons a:hover, body .creativ-shortcode-alertbox-colour-theme, #cr3ativeportfolio_portfolio-filter li a {
+    background-color:#f6f6f6;
+}
+
+pre, .wp-playlist-light .wp-playlist-playing, .wp-playlist-light .wp-playlist-item:hover {
+    background: none repeat scroll 0 0 #f6f6f6 !important;
+}
+
+h4, h4.crimson, #linkblock h4, p, p.crimson, p.clearsans, ul li, ol li, #linkblock ul li a:hover, #linkblock ol li a:hover, #linkblock h2, a#controlbtn, .paginationprev a:hover, .paginationnext a:hover, #cr3ativeportfolio_portfolio-filter li, .overlay .spacer, #cr3ativeportfolio_portfolio-filter li a:hover, .portfolio_details p, .cr3ativeportfolio_custom_meta, .cr3ativeportfolio_custom_meta ul li, .cr3ativeportfolio_custom_meta p, .metacats a:hover, .metacomments a:hover, input#searchBox[type=text]:focus, textarea:focus, input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=submit], .comment_title, #respond h3, .comment-author, .commentlist p {
+    color:#626262;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: none repeat scroll 0 0 #626262 !important;
+}
+
+.creativ-shortcode-alertbox-colour-theme.creativ-shortcode-alertbox p {
+    color:#626262 !important;
+}
+
+pre {
+    border-left: 20px solid #d8505d;
+}
+
+pre:before, a, a:hover, .pagination2 a, .commentlist a {
+    color:#d8505d;
+}
+
+a:hover {
+    border-bottom: 1px solid #d8505d;
+}
+
+span.wpcf7-not-valid-tip, div.wpcf7-validation-errors {
+    color:#d8505d !important;
+}
+
+#commentform input.error, #commentform textarea.error, .wpcf7 input.wpcf7-not-valid, .wpcf7 textarea.wpcf7-not-valid {
+    border:3px solid #d8505d;
+}
+
+body .creativ-shortcode-button-colour-red {
+    background-color:#d8505d !important;
+}
+
+.creativ-shortcode-alertbox-colour-theme.creativ-shortcode-alertbox a {
+    color:#d8505d !important; 
+}
+
+cite, .page_title span, h2 a span, h4.clearsans, .blogwidget, .blogwidget p, .blogwidget a, .intro, #linkblock [class^="fa-icon-"]:before, #linkblock [class*=" fa-icon-"]:before, #linkblock ul li a, #linkblock ol li a, .copyright, .spacer, .spacer2, .nocenterspacer, h3#reply-title:after, .nav li > a > span:before, .nav li a, .nav li a ul li a, .paginationprev a, .paginationnext a, .paginationprev a, .paginationnext a, #cr3ativeportfolio_portfolio-filter li a, .meta_date, .posted_details, .posted_details a, .single_meta, .pagination2, .pagination2 a, .pagination2 p, .post_format, input#searchBox[type=text], textarea, input[type=text], input[type=email], input[type=url], input[type=password], .wpcf7-form p, label, .comment-date, a.comment-reply-link, a.comment-reply-link:hover, div#linkblock {
+    color:#8f8f90;
+}
+
+.comment-date a, .cancel-comment-reply a, .wp-playlist-light, a.wp-playlist-caption, a.wp-playlist-caption span.wp-playlist-item-title, .wp-playlist-light .wp-playlist-item {
+    color:#8f8f90 !important;
+}
+
+body .creativ-shortcode-tab-buttons a { 
+    color:#8f8f90 !important;
+}
+
+.wp-playlist-light .wp-playlist-item:hover, .wp-playlist-item .wp-playlist-caption:hover {
+    color:#626262 !important;
+}
+
+.main2 {
+    background-color:#d8505d;
+}
+
+.main2 p, .main2 h1, .main2 h2, .main2 h3, .main2 h4, .main2 h5, .main2 h6, .main2 ul li, .main2 ol li, .main2 ul li a, .main2 ol li a, .main2 a {
+    color:#ffffff !important;
+}
+
+body .creativ-shortcode-button-colour-theme:hover, #cr3ativeportfolio_portfolio-filter li a.current, #cr3ativeportfolio_portfolio-filter li a:hover {
+    color:#f6f6f6 !important;
+}
+
+body .creativ-shortcode-button-colour-theme, #cr3ativeportfolio_portfolio-filter li a {
+    color:#434343 !important;
+}
+
+#cr3ativeportfolio_portfolio-filter li a.current, #cr3ativeportfolio_portfolio-filter li a:hover {
+    background-color:#434343 !important;
+}
+
+
+</style>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body class="home page page-id-34 page-template page-template-template-home-php">
+
+    <!-- Start of bdywrapper -->
+    <div class="bdywrapper">
+
+        <!-- Start of aside -->
+        <aside>
+
+            <!-- Start of linkblock --> 
+            <div id="linkblock">
+
+                <!-- Start of linkblock wrapper -->
+                <div id="linkblock_wrapper">
+
+                    <!-- Start of top logo -->
+                    <div id="top_logo">
+                        <a href="/"><img src="#" alt="logo" height="27" width="103"></a>
+
+                    </div><!-- End of top logo -->
+
+                    <!-- Start of responsivenav -->
+                    <div class="responsivenav">
+                        <div class="menu-primary-container">
+                            <ul id="menu-primary" class="nav">
+                                <li id="menu-item-286" class="fa-icon-home menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-34 current_page_item menu-item-286"><a href="#">Home</a></li>
+                            <li id="menu-item-288" class="fa-icon-user menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="#">About</a></li>
+                        </ul>
+                    </div>            
+           </div><!-- End of responsivenav --> 
+
+<!-- Start of control --> 
+<div id="control">
+    <a id="controlbtn" class="open close" href="#" alt="Show/View your stuffs"></a>
+</div><!-- End of control -->
+
+</div><!-- End of linkblock --> 
+
+<div class="clear"></div>
+
+</aside><!-- End of aside -->
+<!-- Start of main2 -->
+<div class="main2"> 
+ <div class="textwidget"><div class="center">
+    <h1><span class="fa fa-icon-heart-empty"></span></h1>
+    <h1>Welcome to Secure Chat !</h1>
+    <p>This is a video chat application which allows you to have a group video chat room with 7 other of your friends at maximum without having to download anything. Best of all ... Its free</p>
+    <a href="chat.html" class="creativ-shortcode creativ-shortcode-button creativ-shortcode-button-colour-dark-gray creativ-shortcode-button-size-large creativ-shortcode-button-edge-rounded" target="_self">Start Chat</a>
+</div></div>
+</div><!-- End of main2 -->
+</div><!-- End of bdywrapper -->
+
+
+
+
+<script type="text/javascript">
+// DOM ready
+jQuery(window).ready(function(){
+
+    'use strict';
     
+    jQuery("a#controlbtn").click(function(e) {
+        e.preventDefault();
+        var margin= 240;
+        var slidepx=jQuery("div#linkblock").width() + 10;
+        if ( !jQuery("div.bdywrapper").is(':animated') ) { 
+         if (parseInt(jQuery("div.bdywrapper").css('marginLeft'), 10) < slidepx) {
+            jQuery(this).removeClass('close').html('');
+            margin = "+=" + slidepx;
+        } else {
+            jQuery(this).addClass('close').html('');
+            margin = "-=" + slidepx;
+        }
+        jQuery("div.bdywrapper").animate({ 
+          marginLeft: margin
+      }, {
+        duration: 'slow',
+        easing: 'easeOutQuint'
+    });
+    } 
+});
+    
+    jQuery('.nav').navgoco();
 
-  </head>
+    if (Modernizr.touch) {
+            // show the close overlay button
+            jQuery(".close-overlay").removeClass("hidden");
+            // handle the adding of hover class when clicked
+            jQuery(".effects .img").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if (!jQuery(this).hasClass("hover")) {
+                    jQuery(this).addClass("hover");
+                }
+            });
+            // handle the closing of the overlay
+            jQuery(".close-overlay").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                if (jQuery(this).closest(".img").hasClass("hover")) {
+                    jQuery(this).closest(".img").removeClass("hover");
+                }
+            });
+        } else {
+            // handle the mouseenter functionality
+            jQuery(".effects .img").mouseenter(function(){
+                jQuery(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function(){
+                jQuery(this).removeClass("hover");
+            });
+        }
 
-  <body>
-    <div class="wrapper">
-      <div class="navbar navbar-inverse">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">SecuChat - Secure VoIP Chat</a>
-        </div>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="about"> <a href="#">About</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-6 col-md-offset-3">
-        <h1 class="heading col-md-12">Want to speak to someone, paranoid about NSA snooping on Skype and Hangout?</h1>
-        <a href="chat.html" class="btn btn-warning btn-lg get-room"> Get a Room</a>
-        <!-- <button onclick="TogetherJS(this); return false;" class="btn btn-danger btn-lg get-room">Start TogetherJS</button> -->
-      </div>
-      <div class="info well col-md-6 col-md-offset-3">
-        <ul class="text-danger">
-          <li>So you are scared of NSA and other Govt. organizations invading your privacy?</li>
-          <li>Tried Skype, Hangout, etc.. but got frustrated ?</li>
-          <li>SecuChat is probably an option that has got you covered.</li>
-          <li>No installation required.</li>
-          <li>No sign up.</li>
-          <li>No strings attached. Its Free.</li>
-          <li>Simply create a chat room and share the link with someone to get connected.</li>
-        </ul>
-      </div>
-      <div class="push"><!--//--></div>
-    </div>
-    <footer>
-      <div class="container col-xs-12">
-        <p>SecuChat by <a href="http://github.com/sudheesh001/" target="_blank" rel="author">Sudheesh Singanamalla</a>. Uses <a href="http://simplewebrtc.com/" target="_blank" rel="external">Simplewebrtc</a> and <a href="http://bootswatch.com/united/" target="_blank" rel="external">Bootswatch United theme</a>.</p>
-      </div>
+        var $container = jQuery('ul#cr3ativeportfolio_portfolio-list');
+    // initialize
+    $container.masonry({
+        isAnimated: true,
+        animationOptions: {
+            duration: 300,
+            easing: 'linear',
+            queue: false
+        },
+        itemSelector: '.effects',
+        columnWidth: 300,
+        gutterWidth: 0
+    });
+    
+    var $container = jQuery('ul#cr3ativeportfolio_portfolio-list').masonry();
+    // layout Masonry again after all images have loaded
+    $container.imagesLoaded( function() {
+      $container.masonry({
+        isAnimated: true,
+        animationOptions: {
+            duration: 300,
+            easing: 'linear',
+            queue: false
+        },
+        itemSelector: '.effects', 
+        columnWidth: 300,
+        gutterWidth: 0
+    });
+  });
 
-    </footer>
-    <a href="https://github.com/sudheesh001/secuchat" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
-  </body>
-</html>
+    jQuery("ul#cr3ativeportfolio_portfolio-list").filterable(
+    {
+      animationSpeed: 400
+  }
+  );
+    
+    var masonryUpdate = function() {
+        setTimeout(function() {
+            jQuery('ul#cr3ativeportfolio_portfolio-list').masonry();
+        }, 500);
+    }
+    
+    jQuery(document).on('click', masonryUpdate);
+    jQuery(document).ajaxComplete(masonryUpdate);
+
+});
+
+</script> 
+
+</body></html>
