@@ -1,5 +1,6 @@
 body{
-  background-image:url('../images/nightly.png');
+  background-image: none;
+  background:#1f8dd6;
 }
 .videoContainer {
   position: relative;
@@ -80,4 +81,15 @@ footer p{
 #copy{
   display: none;
   margin-top: 6px;
+}
+#title{
+  float: left;
+  margin-top: 30px;
+}
+#leave{
+  display: none;
+}
+#clock{
+  float: right;
+  margin-top: -100px;
 }

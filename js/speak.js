@@ -1,7 +1,6 @@
 $(document).ready(function () {
   // grab the room from the URL
   var room = location.search && location.search.split('?')[1];
-
   // create our webrtc connection
   var webrtc = new SimpleWebRTC({
     // the id/element dom element that will hold "our" video
@@ -71,9 +70,13 @@ $(document).ready(function () {
   // Since we use this twice we put it here
   function setRoom(name) {
     $('form').remove();
-    $('h1').text(name);
-    $('#subTitle').text(location.href).addClass('alert alert-dismissable alert-warning');
+    $('h2').text('Share this URL');
+      $('#subTitle').text(location.href).addClass('alert alert-dismissable alert-warning');
     $('body').addClass('active');
+    $('#generate').css('display','none');
+    $('#leave').css('display', 'inline');
+    TogetherJS(this); 
+    return false;
   }
 
   if (room) {
@@ -83,7 +86,6 @@ $(document).ready(function () {
       var val = $('#sessionInput').val().toLowerCase().replace(/\s/g, '-').replace(/[^A-Za-z0-9_\-]/g, '');
       webrtc.createRoom(val, function (err, name) {
         console.log(' create room cb', arguments);
-
         $('#leave').css('display', 'inline');
         $('#copy').css('display', 'inline');
         $(".clock").TimeCircles({
@@ -118,9 +120,9 @@ $(document).ready(function () {
   }
 
   $('#copy').click(function () {
-    window.prompt('Share this url to anyone you want to connect:', window.location.href);
-    return false;
-  })
-
+    var text=$('.togetherjs-share-link').val();
+    window.prompt('Share this url to anyone you want to connect:', text);
+  });
+  $('#leave').css('display','none');
 });
 
