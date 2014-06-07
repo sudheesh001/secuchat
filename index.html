@@ -208,36 +208,49 @@ body .creativ-shortcode-button-colour-theme, #cr3ativeportfolio_portfolio-filter
                         <div class="menu-primary-container">
                             <ul id="menu-primary" class="nav">
                                 <li id="menu-item-286" class="fa-icon-home menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-34 current_page_item menu-item-286"><a href="#">Home</a></li>
-                            <li id="menu-item-288" class="fa-icon-user menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="#">About</a></li>
-                        </ul>
-                    </div>            
-           </div><!-- End of responsivenav --> 
+                                <li id="menu-item-288" class="fa-icon-user menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="#">About</a></li>
+                            </ul>
+                        </div>            
+                    </div><!-- End of responsivenav --> 
 
-<!-- Start of control --> 
-<div id="control">
-    <a id="controlbtn" class="open close" href="#" alt="Show/View your stuffs"></a>
-</div><!-- End of control -->
+                    <!-- Start of control --> 
+                    <div id="control">
+                        <a id="controlbtn" class="open close" href="#" alt="Show/View your stuffs"></a>
+                    </div><!-- End of control -->
 
-</div><!-- End of linkblock --> 
+                </div><!-- End of linkblock --> 
 
-<div class="clear"></div>
+                <div class="clear"></div>
 
-</aside><!-- End of aside -->
-<!-- Start of main2 -->
-<div class="main2"> 
- <div class="textwidget"><div class="center">
-    <h1><span class="fa fa-icon-heart-empty"></span></h1>
-    <h1>Welcome to Secure Chat !</h1>
-    <p>This is a video chat application which allows you to have a group video chat room with 7 other of your friends at maximum without having to download anything. Best of all ... Its free</p>
-    <a href="chat.html" class="creativ-shortcode creativ-shortcode-button creativ-shortcode-button-colour-dark-gray creativ-shortcode-button-size-large creativ-shortcode-button-edge-rounded" target="_self">Start Chat</a>
-</div></div>
-</div><!-- End of main2 -->
-</div><!-- End of bdywrapper -->
+            </aside><!-- End of aside -->
+            <!-- Start of main2 -->
+            <div class="main2"> 
+               <div class="textwidget"><div class="center">
+                <h1><span class="fa fa-icon-heart-empty"></span></h1>
+                <h1>Welcome to Secure Chat !</h1>
+                <p>This is a video chat application which allows you to have a group video chat room with 7 other of your friends at maximum without having to download anything. Best of all ... Its free</p>
+                <a href="chat.html" class="creativ-shortcode creativ-shortcode-button creativ-shortcode-button-colour-dark-gray creativ-shortcode-button-size-large creativ-shortcode-button-edge-rounded" target="_self">Start Chat</a>
+            </div></div>
+            <div class="center">
+            <div class="row">
+                <div class="col-md-4">
+            <h1><span class="fa fa-globe"></span></h1><h3>Connect with anyone worldwide by sending just a link</h3>
+                </div>
+                <div class="col-md-4">
+            <h1><span class="fa fa-group"></span></h1><h3>Have group video chat with all your friends.</h3>
+                </div>
+                <div class="col-md-4">
+            <h1><span class="fa fa-hdd-o"></span></h1><h3>No special software/plugins to install, just use a modern browser</h3>
+                </div>
+            </div>
+            </div>
+                </div><!-- End of main2 -->
+
+            </div><!-- End of bdywrapper -->
 
 
 
-
-<script type="text/javascript">
+            <script type="text/javascript">
 // DOM ready
 jQuery(window).ready(function(){
 
@@ -248,7 +261,7 @@ jQuery(window).ready(function(){
         var margin= 240;
         var slidepx=jQuery("div#linkblock").width() + 10;
         if ( !jQuery("div.bdywrapper").is(':animated') ) { 
-         if (parseInt(jQuery("div.bdywrapper").css('marginLeft'), 10) < slidepx) {
+           if (parseInt(jQuery("div.bdywrapper").css('marginLeft'), 10) < slidepx) {
             jQuery(this).removeClass('close').html('');
             margin = "+=" + slidepx;
         } else {
